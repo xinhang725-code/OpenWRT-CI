@@ -1,7 +1,7 @@
 # Dedicated target: Xiaomi BE6500 (Qualcomm IPQ53xx).
-# In WRT-CORE.yml, a CONFIG filename containing "TEST" skips Config/GENERAL.txt.
-# This intentionally produces a minimal first-build image; it does NOT mean
-# configuration-only mode. BE6500-BUILD.yml passes WRT_TEST=false.
+# WRT-CORE.yml skips Config/GENERAL.txt when the CONFIG filename contains "TEST".
+# This produces a minimal firmware image, not a config-only run.
+# To compile via WRT-TEST.yml, select BE6500-TEST and set the TEST checkbox to false.
 CONFIG_TARGET_qualcommbe=y
 CONFIG_TARGET_qualcommbe_ipq53xx=y
 CONFIG_TARGET_DEVICE_qualcommbe_ipq53xx_DEVICE_xiaomi_be6500=y
